@@ -2,6 +2,7 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Link, Route } from "react-router-dom";
 import Users from "./pages/Users";
 import React from "react";
+import Home from "./pages/Home";
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
         </div>
       </nav>
       <Routes>
-        <Route path="/" />
+        <Route path="/" element={<Home />} />
         <Route path="/users" element={<Users />} />
       </Routes>
     </Router>
